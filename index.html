@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- LES STYLES -->
+    <link rel="stylesheet" href="assets/css/bs.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- LES SCRIPTS -->
+    <script async src="https://kit.fontawesome.com/0a380838fe.js" crossorigin="anonymous"></script>
+    <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script async src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+    <title>Eden - Assistance funéraire</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  </head>
+
+  <body>
+   <div class="eden-home-page">
+    <div class="header-top card text-white bg-primary">
+      <div class="card-body">
+        <div class="contact">
+          <a class="mail" href="mailto:info@eden.com.tn">
+            <i class="fa-solid fa-envelope"></i>
+            contact@eden.com.tn
+          </a>
+          <a class="phone" href="tel:+2162222222">
+            <i class="fa-solid fa-phone"></i><strong> (24/7)</strong> +33
+            595040393
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-navbar p-0" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.svg" alt="logo eden" class="img" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <i class="fa-solid fa-bars"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> Démarches décès</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inhumation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Crémation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Rapatriement de corps</a>
+              </li>
+            
+
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Paris</a></li>
+                  <li><a class="dropdown-item" href="#">Lyon</a></li>
+                  <li><a class="dropdown-item" href="#">Marseille</a></li>
+                  <li><a class="dropdown-item" href="#">Nice</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- A PROPOS  -->
+<div class="content">
+        <div class="about_us">
+            <img src="assets/img/funeral.jpg" class="img-fluid alt="funeral" class="img_section">
+            <div class="about">
+                <h1 class="display-4 about-text tracking-in-contract-bck">Qui sommes nous?
+                  <hr class="title-divider">
+                </h1>
+                
+
+                <div class="apropos mt-5 scale-up-top ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 apropos_text" >
+                                <h2 class="nom_entreprise display-8">PF Lutèce : Auprès de vous depuis 1997</h2>
+                                <p class="aprops_desc">
+                                Fort de plus de 20 années d’expérience, nos équipes s’occuperont des obsèques de vos proches de la manière la plus discrète et la plus simple. 
+                                <ul>
+                                  <li>Qualité
+                                  </li>
+                                  <li>Discrétion</li>
+                                  <li>Professionnalisme</li>
+                                </ul>
+                            </p></div>
+                            <div class="col-md-4 contact_area">
+                                <button type="button" class="btn btn-warning btn-lg contact_btn"><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp; Devis en ligne</button>
+                                <button type="button" class="btn btn-primary btn-lg contact_btn"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp; +33595040393</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+</div>
+<div class="presentation_eden" 
+
+>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 presentation_logo_container" data-aos="zoom-in-right">
+        <img src="assets/img/eden.png" alt="logo eden" class="presentation_logo" />
+
+      </div>
+      <div class="col-md-8" data-aos="fade-right" >
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-6 presentation_title" >EDEN - Assistance Funéraire</h1>
+            <p class="lead" >
+              Nos Prestations Spécialisées dans le Rapatriement International :
+<strong>EDEN - Assistance Funéraire</strong> est capable de répondre à toutes attentes de compagnies d´assurance ou de familles et de réguler les points suivants :
+Transport par avion toutes destinations à partir de toutes provenances.
+Estimation des rapatriements formalités sur le lieu de décès.
+Formalités aéroportuaires au départ et conditionnement du cercueil.
+Préparation des corps choix du meilleur prestataire.
+Possibilités de choix de cercueil.
+Formalités aéroportuaires et à l´arrivée inhumation ou incinération dans le pays de destinations.
+En Tunisie : <strong>EDEN</strong> a la capacité d´intervention sur tout le territoire tunisien. Doté de personnel actif et multilingue. <strong>EDEN</strong> a la capacité de répondre à toute attente des familles.
+
+La mission d´EDEN est d´accomplir les tâches suivantes : Formalités administratives : Auprès des autorités tunisiennes : Auprès des consulats ou ambassades : Formalités auprès des services aéroportuaires Réservation des vols : avec un prix bien négocié Itinéraire le plus rapide.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
+</div>
+     <!-- NOS ENGAGEMENTS -->
+     
+     <div class="engagements"  >
+     
+  <div class="eng_cards" >
+   
+       <!-- 1 -->
+        <div class="row engagement_cards" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" >
+          <div class="eng_title">
+          <h1 class="display-8 qualite-text">Nos qualités
+            <hr class="title-divider">
+          </h1>
+        </div>
+        <div class="col-md-auto col-sm-12">
+    <div class="card card_eng"  style="width: 18rem;">
+      <div class="card-body">
+        <div class="image_center">
+        <img src="assets/img/efficient.svg" alt="Efficace" class="eng_img">
+      </div>
+        <h5 class="card-title">Efficacité</h5>
+        <p class="card-text eng-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+      </div>
+    </div>
+  </div>
+    <!-- 2 -->
+    <div class="col-md-auto col-sm-12">
+    <div class="card card_eng" style="width: 18rem;">
+      <div class="card-body">
+        <div class="image_center">
+          <img src="assets/img/speed.svg" alt="Rapidité" class="eng_img">
+  </div>
+        <h5 class="card-title">Rapidité & disponibilité</h5>
+        <p class="card-text eng-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+      </div>
+    </div>
+    </div>
+    <!-- 3 -->
+    <div class="col-md-auto col-sm-12">
+    <div class="card card_eng" style="width: 18rem;">
+      <div class="card-body">
+        <div class="image_center">
+        <img src="assets/img/professional.svg" alt="Professionalisme" class="eng_img">
+        </div>
+        <h5 class="card-title">Professionalisme</h5>
+        <p class="card-text eng-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+      </div>
+    </div>
+</div>
+<!-- 4 -->
+<div class="col-md-auto col-sm-12">
+  <div class="card card_eng" style="width: 18rem;">
+    <div class="card-body">
+      <div class="image_center">
+      <img src="assets/img/certificate.svg" alt="Certificate" class="eng_img">
+      </div>
+      <h5 class="card-title">Personnel diplômé</h5>
+      <p class="card-text eng-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    </div>
+  </div>
+  </div>
+      
+
+</div>
+</div> 
+
+</div>
+<div class="divider"></div>
+
+<div class="eng_title" >
+  <h1 class="display-8 map-text" data-aos="zoom-in">Où nous trouver
+
+    <hr class="title-divider">
+  </h1>
+</div>
+<img src="assets/img/map.svg" alt="Certificate" class="map_icon">
+<div class="card map-card" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
+  <div id="mapid" style="height: 500px; width: 100%;"></div>
+</div>
+
+<section class="contact_top_sec">
+  <div class="contact_top" data-aos="zoom-in">
+      <div class="container">
+          <h1 class="contact_header">Entrez en contact avec notre équipe</h1>
+          <p class="contact_text">Laissez vos informations ci-dessous et notre équipe vous contactera !</p>
+      </div>
+      <div class="contact_form">
+        <div class="container">
+          <form>
+              <div class="input-field">
+                  <input type="text" id="fname" required />
+                  <label for="fname">Prenom</label>
+              </div>
+              <div class="input-field">
+                  <input type="text" id="lname" required />
+                  <label for="lname">Nom</label>
+              </div>
+              <div class="input-field">
+                  <input type="text" id="email" required />
+                  <label for="email">Addresse Mail</label>
+              </div>
+              <div class="input-field">
+                  <input type="text" id="num" required />
+                  <label for="num">Numero de telephone</label>
+              </div>
+              <div class="input-field">
+                  <input type="text" id="cname" required />
+                  <label for="cname">Addresse</label>
+              </div>
+              <div class="input-field">
+                  <textarea rows="5" id="message" name="text" required></textarea>
+                  <label for="message">Votre message ...</label>
+              </div>
+              <button class="btn submit_btn" data-toggle="modal" href="#ignismyModal">Envoyer</button>
+              <div class="modal fade" id="ignismyModal" role="dialog">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <div class="thank-you-pop">
+                                  <h1>Your message has been submitted!</h1>
+                                  <p>Thank you for contacting us. A representative from our team will be in
+                                      touch with you.</p>
+                                  <button type="button" class="btn okay" data-dismiss="modal"
+                                      aria-label=""><span>OKAY</span></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+    <script src="assets/js/map.js"></script>
+  <!-- aos script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+$(function() {
+  AOS.init({
+  startEvent: 'load'
+});
+});
+  </script>
+  </div>
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>
