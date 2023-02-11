@@ -9,8 +9,7 @@ body {
   margin: auto;
   background-color: #005480;
   padding: 0px;
-
-  color: rgb(71, 71, 71);
+  color: #333536a3;
 }
 .eden-home-page {
   overflow-x: hidden;
@@ -136,13 +135,12 @@ body {
   font-weight: 900;
   font-size: 3vw;
   line-height: 1em;
-  letter-spacing: 0.2em;
+
   color: #fff;
   text-transform: uppercase;
   margin-top: 3vw;
 }
 .apropos {
-  background-color: rgb(253 254 255 / 85%);
   border-radius: 8px;
   height: fit-content;
   width: fit-content;
@@ -152,8 +150,9 @@ body {
   font-weight: 900;
 }
 .apropos_text {
-  padding: 5rem;
   font-family: "Vollkorn", Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  color: #d4d4d5;
 }
 .apropos_desc {
   text-align: justify;
@@ -163,11 +162,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1.5rem;
   align-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 767px) {
   .card_eng {
@@ -194,7 +193,8 @@ body {
     margin: -1.5vw;
   }
   .nom_entreprise,
-  .presentation_title {
+  .presentation_title,
+  .qualite-text {
     font-size: 1rem;
   }
   .aprops_desc {
@@ -205,13 +205,14 @@ body {
   .lead {
     font-size: 0.8rem;
   }
+  .apropos_text {
+    font-size: 1rem;
+  }
 
   .contact_area {
     margin-top: 0.2rem;
   }
-  .apropos_text {
-    padding: 1.7rem;
-  }
+
   .contact a {
     font-size: 0.9rem;
     margin-bottom: 1vw;
@@ -223,9 +224,6 @@ body {
   .nav-link {
     font-family: "Quicksand", sans-serif;
     font-size: 2.6vw;
-  }
-  .apropos {
-    width: 80%;
   }
 }
 .img-fluid {
@@ -245,11 +243,9 @@ body {
   align-content: space-between;
 }
 .card_eng {
-  margin: 1rem 4rem;
+  margin: 3rem 4rem;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
+  width: 25rem;
   background-color: #ffffff4f;
   border-radius: 10px;
 }
@@ -370,7 +366,6 @@ body {
   align-content: center;
 }
 .jumbotron-fluid {
-  background-color: rgb(245 245 245 / 33%);
   border-radius: 25px;
   padding: 2rem;
 }
@@ -383,7 +378,6 @@ body {
 .qualite-text {
   font-family: Montserrat, sans-serif;
   font-weight: 900;
-  font-size: 2vw;
   line-height: 1em;
   letter-spacing: 0.1em;
   color: #1e4278;
