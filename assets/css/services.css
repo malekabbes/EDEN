@@ -212,3 +212,6 @@ body {
 #timeline .demo-card--step .head::after {
   border-color: #1b3966a9;
 }
+#timeline .demo-card--step:hover {
+  transform: scale(1.2);
+}
