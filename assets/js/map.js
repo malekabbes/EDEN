@@ -8,5 +8,5 @@ marker
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
-    '&copy; Made by  <a href="https://www.malekabbes.com/">Malek abbes 😊</a>  ',
+    '&copy; Made by  <a href="https://www.malekabbes.com/">EDEN</a>  ',
 }).addTo(map);

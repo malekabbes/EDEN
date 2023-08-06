@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="assets/css/services.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/features.css" />
     <link rel="stylesheet" href="assets/css/animations.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- LES SCRIPTS -->
     <script async src="https://kit.fontawesome.com/0a380838fe.js" crossorigin="anonymous"></script>
-    <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script async src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="assets/js/script.js"></script>
     <script src="assets/js/form.js"></script>
     <title>Eden - Assistance funéraire</title>
@@ -32,18 +35,30 @@
     <div class="header-top card text-white bg-primary">
       <div class="card-body">
         <div class="contact">
-          <a class="mail" href="mailto:info@eden.com.tn">
+          <a class="mail" href="mailto:eden@eden.com.tn">
             <i class="fa-solid fa-envelope"></i>
-            contact@eden.com.tn
+            eden@eden.com.tn / info@eden.com.tn
+
           </a>
-          <a class="phone" href="tel:+2162222222">
-            <i class="fa-solid fa-phone"></i><strong> (24/7)</strong> +33
-            595040393
+          <a class="phone" href="tel:+21698645613">
+            <i class="fa-solid fa-phone"></i><strong> (24/7)</strong>+21698645613 / +21626453446
           </a>
         </div>
       </div>
     </div>
     <!-- NAVBAR -->
+  
+    <style>
+      /* Center the menu items and add spacing */
+      .navbar-nav {
+        justify-content: center;
+      }
+    
+      .navbar-nav .nav-item {
+        margin-right: 20px;
+      }
+    </style>
+    
     <nav class="navbar navbar-expand-lg fixed-top bg-navbar p-0" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -58,49 +73,33 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <i class="fa-solid fa-bars"></i>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#"> Démarches décès</a>
+              <a class="nav-link" aria-current="page" href="#about">Présentation de la société</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Inhumation</a>
+              <a class="nav-link" aria-current="page" href="#services">Nos services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Crémation</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Rapatriement de corps</a>
-              </li>
-            
-
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Paris</a></li>
-                  <li><a class="dropdown-item" href="#">Lyon</a></li>
-                  <li><a class="dropdown-item" href="#">Marseille</a></li>
-                  <li><a class="dropdown-item" href="#">Nice</a></li>
-                </ul>
-              </li>
-            </ul>
-           
           </ul>
         </div>
       </div>
     </nav>
+    
+    
     <!-- A PROPOS  -->
 <div class="content">
-        <div class="about_us">
+        <div class="about_us" id="about">
             <img src="assets/img/funeral.jpg" class="img-fluid alt="funeral" class="img_section">
             <div class="about">
-                <h1 class="display-4 about-text tracking-in-contract-bck">Au service des familles depuis 20 ans
+                <h2 class="display-4 about-text tracking-in-contract-bck">Au service des familles depuis des décennies
                   <hr class="title-divider">
-                </h1>
+                </h2>
                 
 
                 <div class="apropos mt-5 scale-up-top ">
@@ -110,13 +109,13 @@
                               <div class="jumbotron-fluid col-md-9">
                                 <div class="container">
                                   <div class="apropos_text" >
-                                En associant compétence et expérience dans notre activité, nous offrons aux familles endeuillées une qualité de prestation et de service fondé sur les valeurs et les pratiques religieuses du rite funéraire. Nous veillons ainsi à vouer une attention particulière à vos attentes et à vos exigences.</div>
+                                    Nous combinons nos compétences et notre expérience pour offrir aux familles endeuillées des prestations et services de qualité, en nous appuyant sur les valeurs et pratiques religieuses du rite funéraire. Nous sommes attentifs à répondre à vos attentes et exigences de manière particulièrement soignée.</div>
                               </div>
                         </div>
                     
                                 <div class="col-md-3 contact_area">
-                                <button type="button" class="btn btn-warning btn-lg contact_btn"><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp; Devis en ligne</button>
-                                <button type="button" class="btn btn-primary btn-lg contact_btn"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp; +33595040393</button>
+                               
+                                <button type="button" class="btn btn-primary btn-lg contact_btn"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp; +21698645613</button>
 
                             </div>
                         </div>
@@ -132,25 +131,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4 presentation_logo_container" data-aos="zoom-in-right">
-        <img src="assets/img/eden.png" alt="logo eden" class="presentation_logo" />
+        <img src="assets/img/logo.svg" alt="logo eden" class="presentation_logo" />
 
       </div>
       <div class="col-md-8" data-aos="fade-right" >
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-6 presentation_title" >EDEN - Assistance Funéraire</h1>
-            <p class="lead" >
-              Nos Prestations Spécialisées dans le Rapatriement International :
-<strong>EDEN - Assistance Funéraire</strong> est capable de répondre à toutes attentes de compagnies d´assurance ou de familles et de réguler les points suivants :
-Transport par avion toutes destinations à partir de toutes provenances.
-Estimation des rapatriements formalités sur le lieu de décès.
-Formalités aéroportuaires au départ et conditionnement du cercueil.
-Préparation des corps choix du meilleur prestataire.
-Possibilités de choix de cercueil.
-Formalités aéroportuaires et à l´arrivée inhumation ou incinération dans le pays de destinations.
-En Tunisie : <strong>EDEN</strong> a la capacité d´intervention sur tout le territoire tunisien. Doté de personnel actif et multilingue. <strong>EDEN</strong> a la capacité de répondre à toute attente des familles.
+            <h1 class="display-6 presentation_title" id="Presentation">EDEN - Assistance Funéraire</h1>
+            <p class="lead" id="services">
+             
+<strong>EDEN - Assistance Funéraire</strong> créée en 2010, a pour vocation d’être à l‘écoute et d’assister les familles en deuil en vue du rapatriement de leur proche dans son pays d’origine ou de l’inhumer en Tunisie.
+Avec un réseau élargi de partenaires dans le monde entier, EDEN a pour objectif de mener dans les meilleures conditions et dans les plus brefs délais le rapatriement du défunt vers la destination choisie par la famille. 
 
-La mission d´EDEN est d´accomplir les tâches suivantes : Formalités administratives : Auprès des autorités tunisiennes : Auprès des consulats ou ambassades : Formalités auprès des services aéroportuaires Réservation des vols : avec un prix bien négocié Itinéraire le plus rapide.
+Eden, agit et prend en considération la culture et la religion du défunt afin de satisfaire les demandes et les attentes des familles.
+
+
             </p>
           </div>
         </div>
@@ -161,188 +156,442 @@ La mission d´EDEN est d´accomplir les tâches suivantes : Formalités administ
 </div>
 </div>
 
-<div class="services">
-  
-</div>
-     <!-- NOS ENGAGEMENTS -->
+     <!-- NOS Services -->
      
-     <div class="engagements"  >
-     
-  
-   
-       <!-- 1 -->
+     <div class="nos_services">
     
-          <section id=timeline>
-            <div class="eng_title" data-aos="zoom-in">
-              <h1 class="display-6 qualite-text">Demarches
-                <hr class="title-divider">
-              </h1>
-              <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-              <p class="lead">
-                Le décès d’un proche est un moment particulier car à la tristesse de la disparition s’ajoute la nécessité d’accomplir un certain nombre de choses ou taches à priori complexes. Limem services est là pour vous accompagner dans ces moments délicats et de prendre en charge la gestion des funérailles en suivant vos volontés ou celles du défunt .
-    Faites nous confiance !
-              </p>
-            <div class="demo-card-wrapper">
-              <div class="demo-card demo-card--step" data-aos="fade-right">
-                <div class="head">
-                  <div class="number-box">
-                    <span>01</span>
-                  </div>
-                  <h2>Démarche 1</h2>
-                </div>
-                <div class="body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                  <img src="http://placehold.it/1000x500" alt="Graphic">
-                </div>
+              <div class="eng_title services" data-aos="zoom-in" >
+
+
+                <h1 class="display-6 qualite-text" >Nos services
+                  <hr class="title-divider">
+                </h1>
               </div>
-          
-              <div class="demo-card demo-card--step" data-aos="fade-left">
-                <div class="head">
-                  <div class="number-box">
-                    <span>02</span>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <section class="service-section">
+                      
+                      <div class="owl-carousel custom-carousel owl-theme">
+                        <div class="item active" style="background-image: url(./assets/img/vehicules_frigorifiques.jpg);">
+                          <div class="item-desc">
+                            <h4>Transport inter-région</h4>
+                            <p>Nous pouvons assurer le transport de dépouille sur tout le territoire tunisien, nos véhicules frigorifiques sont équipés en vue de ces transports.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/inhumation.jpg);">
+                          <div class="item-desc">
+                            <h4>Inhumation de corps en Tunisie</h4>
+                            <p>Nous vous accompagnons dans l’organisation d’obsèques en prenant en charge toutes les démarches, en mettant à votre disposition une offre de services funéraires complète afin de faire de cette cérémonie un moment de recueillement conforme à vos attentes et aux volontés du défunt.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/musulman.jpg);">
+                          <div class="item-desc">
+                            <h4>Pour les musulmans</h4>
+                            <p>Nous vous proposons des services funéraires adaptés aux rites musulmans, incluant l'inhumation selon le rite musulman, le transport du lieu de décès au domicile ou au lieu choisi par la famille, le transport du domicile au cimetière, la toilette rituelle effectuée par un Imam, la lecture du Coran par 3 ou 5 hommes selon le choix de la famille, les formalités administratives obligatoires auprès des autorités tunisiennes et du consulat du pays d'origine du défunt, l'organisation de repas de Fark, ainsi que la fourniture de chaises et de tentes.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/funeraille.jpeg);">
+                          <div class="item-desc">
+                            <h4>Pour les non musulmans</h4>
+                            <p>Nous sommes là pour vous aider dans l'organisation des obsèques de votre proche,
+                              en prenant en charge toutes les démarches et en vous offrant des services personnalisés tels que l'inhumation, le transport, la toilette et l'habillement du corps, les formalités administratives, la fourniture de chaises, tentes, fleurs,
+                              et la bénédiction de la tombe par un prêtre.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/fleurs.jpg);">
+                          <div class="item-desc">
+                            <h4>Des fleurs</h4>
+                            <p>Les compositions sont créées pour se placer directement au côté du défunt lors de la cérémonie d’obsèques.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/toilette_mortuaire.jpg);">
+                          <div class="item-desc">
+                            <h4>La toilette participe au processus de deuil</h4>
+                            <p>La toilette mortuaire, pratiquée depuis toujours, est un acte symbolique présent dans toutes les cultures et religions, permettant d'aborder le deuil et rendre hommage au défunt avec dignité. Réalisée par des agents mortuaires, elle se déroule habituellement à l'hôpital, 
+                              mais peut aussi avoir lieu à domicile ou dans une chambre funéraire.</p>
+                          </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/sépulture.jpg);">
+                          <div class="item-desc">
+                            <h4>La sépulture, le lieu du souvenir</h4>
+                            <p>La sépulture est le lieu de recueillement clairement identifiable pour la famille et les proches. Elle porte en elle une trace mémorielle et durable du corps du défunt.
+                              Elle est de fait importante dans le processus de deuil et permet de garder un contact, même distant, avec les êtres qui nous ont quittés. C’est un lieu où se cultive le souvenir de l’autre, où la souffrance initiale de la perte est peu à peu remplacée par un certain apaisement. Elle perpétue ainsi une relation intime avec le défunt. En cela, la sépulture peut être un lieu thérapeutique du souvenir.
+                              Elle est aussi une forte évocation de la personne grâce au monument funéraire (ou cinéraire) qui aura été choisi, soit par le défunt lui-même, soit par la famille.</p>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      </div>
+                    </section>
                   </div>
-                  <h2>Démarche 2</h2>
-                </div>
-                <div class="body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                  <img src="http://placehold.it/1000x500" alt="Graphic">
-                </div>
-              </div>
-          
-              <div class="demo-card demo-card--step" data-aos="fade-right">
-                <div class="head">
-                  <div class="number-box">
-                    <span>03</span>
-                  </div>
-                  <h2>Démarche 3</h2>
-                </div>
-                <div class="body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                  <img src="http://placehold.it/1000x500" alt="Graphic">
-                </div>
-              </div>
-          
-              <div class="demo-card demo-card--step" data-aos="fade-left">
-                <div class="head">
-                  <div class="number-box">
-                    <span>04</span>
-                  </div>
-                  <h2>Démarche 4</h2>
-                </div>
-                <div class="body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                  <img src="http://placehold.it/1000x500" alt="Graphic">
-                </div>
-              </div>
-          
-              <div class="demo-card demo-card--step" data-aos="fade-right">
-                <div class="head">
-                  <div class="number-box">
-                    <span>05</span>
-                  </div>
-                  <h2>Démarche 5</h2>
-                </div>
-                <div class="body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                  <img src="http://placehold.it/1000x500" alt="Graphic">
                 </div>
               </div>
               
+              
+              
+              
             </div>
           </section>
-        
+
+      
+          
+          
 
 </div>
 </div> 
 
 </div>
 <div class="divider"></div>
+<section id="features" class="features-area item-full text-center cell-items default-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="site-heading text-center">
+                <h1 class="display-6 avantages-text" id="avantages">Nos Avantages
 
+              </div>
+          </div>
+      </div>
+          <div class="row features-items">
+              <div class="col-md-4 col-sm-6 ">
+                  <div class="item">
+                      <div class="icon">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                      </div>
+                      <div class="info">
+                          <h4 class="feature-title">Prix</h4>
+                          <p class="feature-text">Un prix compétitif pour une prestation complète
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <div class="info">
+                      
+                          <h4 class="feature-title">Accompagnement</h4>
+                          <p class="feature-text">Un accompagnement et une discrétion garantis tout au long de la prestation.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ">
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fa-solid fa-clock"></i>
+                      </div>
+                      <div class="info">
+                          <h4 class="feature-title">Disponibilité</h4>
+                          <p class="feature-text">Une disponibilité 24h/24 pour répondre à vos besoins.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ">
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fa-solid fa-people-group"></i>
+                      </div>
+                      <div class="info">
+                          <h4 class="feature-title">Equipe réactive</h4>
+                          <p class="feature-text">Notre équipe réactive est à votre disposition pour vous aider.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ">
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fa-solid fa-language"></i>
+                      </div>
+                      <div class="info">
+                          <h4 class="feature-title">Langue</h4>
+                          <p class="feature-text">Nous parlons couramment l'Arabe pour mieux comprendre vos besoins et y répondre efficacement.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ">
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fa-solid fa-rocket"></i>
+                      </div>
+                      <div class="info">
+                          <h4 class="feature-title">Qualité</h4>
+                          <p class="feature-text">Haute qualité de service et d'accompagnement
+                          </p>
+                      </div>
+                  </div>
+              </div>
+      </div>
+      
+  </div>
+</section>
 <div class="eng_title" >
   <h1 class="display-8 map-text" data-aos="zoom-in">Où nous trouver
 
     <hr class="title-divider">
   </h1>
 </div>
-<img src="assets/img/map.svg" alt="Certificate" class="map_icon">
 <div class="card map-card" data-aos="fade-up"
 data-aos-anchor-placement="center-bottom">
   <div id="mapid" style="height: 500px; width: 100%;"></div>
 </div>
+<section class="contact_top_sec" >
+  <div class="contact_top"  data-aos="zoom-in" id="contact">
+   
+      <div class="contact_form" id="contact_btn">
+        <div class="site-heading text-center">
+          <h1 class="display-6 avantages-text" id="avantages">Contactez-nous
 
-<section class="contact_top_sec">
-  <div class="contact_top" data-aos="zoom-in">
-      <div class="container">
-          <h1 class="contact_header">Entrez en contact avec notre équipe</h1>
-          <p class="contact_text">Laissez vos informations ci-dessous et notre équipe vous contactera !</p>
-      </div>
-      <div class="contact_form">
+        </div>
         <div class="container">
-          <form>
+          <form id="contactForm">
               <div class="input-field">
-                  <input type="text" id="fname" required />
+                  <input type="text" id="fname" required maxlength="10" onchange="validateInput(this)"/>
                   <label for="fname">Prenom</label>
               </div>
               <div class="input-field">
-                  <input type="text" id="lname" required />
+                  <input type="text" id="lname" required maxlength="10" onchange="validateInput(this)"/>
                   <label for="lname">Nom</label>
               </div>
               <div class="input-field">
-                  <input type="text" id="email" required />
+                  <input type="email" id="email" required onchange="emailVerification(this)"/>
                   <label for="email">Addresse Mail</label>
               </div>
               <div class="input-field">
-                  <input type="text" id="num" required />
+                  <input type="text" id="num" required onchange="validateInput(this)"/>
                   <label for="num">Numero de telephone</label>
               </div>
+              <select id="service" class="select-eden form-select form-select-lg mb-3" >
+                <option selected>Open this select menu</option>
+                <option value="Demande de devis">Demande de devis</option>
+                <option value="Demande d’inhumation">Demande d’inhumation </option>
+                <option value="Demande de crémation">Demande de crémation</option>
+              </select>
               <div class="input-field">
-                  <input type="text" id="cname" required />
-                  <label for="cname">Addresse</label>
-              </div>
-              <div class="input-field">
-                  <textarea rows="5" id="message" name="text" required></textarea>
-                  <label for="message">Votre message ...</label>
-              </div>
-              <button class="btn submit_btn" data-toggle="modal" href="#ignismyModal">Envoyer</button>
-              <div class="modal fade" id="ignismyModal" role="dialog">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-body">
-                              <div class="thank-you-pop">
-                                  <h1>Your message has been submitted!</h1>
-                                  <p>Thank you for contacting us. A representative from our team will be in
-                                      touch with you.</p>
-                                  <button type="button" class="btn okay" data-dismiss="modal"
-                                      aria-label=""><span>OKAY</span></button>
-                              </div>
-                          </div>
+                <textarea rows="5" id="message" name="text" required></textarea>
+                <label for="message">Votre message ...</label>
+            </div>
+              <button type="button" class="btn submit_btn" onclick="sendEmail()">Envoyer</button>
+          </form>
+          <div class="modal fade" id="ignismyModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="thank-you-pop">
+                          <h1>Votre message a été soumis !</h1>
+                          <p>Merci de nous avoir contactés. Un représentant de notre équipe prendra contact avec vous.</p>
+                          <button type="button" class="btn okay" data-dismiss="modal" aria-label=""><span>D'ACCORD</span></button>
                       </div>
                   </div>
               </div>
-          </form>
-        </div>
+          </div>
+      </div>
       </div>
   </div>
 </section>
 
 
+<!-- Add the emailjs library -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script>
+    const EMAILJS_SERVICE_ID = 'service_erzmdnr';
+    const EMAILJS_TEMPLATE_ID = 'template_wgzhpm9';
+    const EMAILJS_USER_ID = 'o6MgHYmaRIWrnf0OY';
+
+    function sendEmail() {
+        const fname = document.getElementById('fname').value;
+        const lname = document.getElementById('lname').value;
+        const email = document.getElementById('email').value;
+        const num = document.getElementById('num').value;
+        const service = document.getElementById('service').value;
+        const message = document.getElementById('message').value;
+       // Validation des champs
+       
+
+        // Add event listeners for real-time validation
+     
+       // Verification des champs 
+       if (!document.getElementById('contactForm').checkValidity()) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Veuillez remplir tous les champs requis.',
+                text: 'Les champs marqués d\'un astérisque (*) doivent être remplis.',
+            });
+            return;
+        }
+
+        const templateParams = {
+            from_name: fname + ' ' + lname,
+            to_name: 'EDEN',
+            email: email,
+            num: num,
+            message:message,
+            service: service,
+        };
+      
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_USER_ID)
+            .then(function (response) {
+                console.log('Email sent successfully!', response);
+
+                Swal.fire({
+                  icon: 'success',
+                    title: 'Votre message a été envoyé !',
+                    text: 'Merci de nous contacter. Un membre de notre équipe prendra contact avec vous.',
+                });
+
+                document.getElementById('contactForm').reset();
+            }, function (error) {
+                console.log('Email sending failed:', error);
+                Swal.fire({
+                  icon: 'error',
+                    title: 'Oops...',
+                    text: 'Quelque chose s\'est mal passé ! Veuillez réessayer ultérieurement.',
+               });
+            });
+    }
+</script>
 
     <script src="assets/js/map.js"></script>
   <!-- aos script -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+  
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
 $(function() {
   AOS.init({
   startEvent: 'load'
 });
 });
   </script>
+    <script src="assets/js/services.js"></script>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Trouvez nous</h4>
+                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Appelez-nous</h4>
+                            <span>+21698645613 / +21626453446</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Envoyez-nous un e-mail</h4>
+                            <span>eden@eden.com.tn / info@eden.com.tn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+              
+                        <div class="footer-social-icon">
+                            <span>Suivez-nous                            </span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#avantages">Avantages</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Nos Services</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Ne manquez pas de vous abonner à notre nouveau flux, veuillez remplir le formulaire ci-dessous.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, All Right Reserved <a href="https://malekabbes.com">MAB</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <li><a href="#avantages">Avantages</a></li>
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#services">Nos Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+  
 </body>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 
 </html>

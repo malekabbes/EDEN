@@ -32,6 +32,21 @@
   line-height: 44px;
   margin-bottom: 40px;
 }
+.contact_form .select-eden {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+  margin-bottom: 40px;
+  background-color: #262a3457;
+  color: rgba(255 255 255 / 65%);
+  font-size: 18px;
+}
+.select-eden option {
+  background-color: #1b3966;
+  border: 2px solid #092c5f;
+}
+
 .contact_form label {
   position: absolute;
   padding: 15px 20px;

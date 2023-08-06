@@ -14,3 +14,24 @@ function initMap() {
     center: location,
   });
 }
+
+function validateInput(inputElement) {
+  console.log({ input: inputElement.value });
+  if (!inputElement.value) {
+    inputElement.setCustomValidity("Veuillez remplir ce champ.");
+  } else {
+    inputElement.setCustomValidity("");
+  }
+}
+function validateEmail(emailElement) {
+  const emailValue = emailElement.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(emailValue)) {
+    emailElement.setCustomValidity(
+      "Veuillez entrer une adresse e-mail valide."
+    );
+  } else {
+    emailElement.setCustomValidity("");
+  }
+}
